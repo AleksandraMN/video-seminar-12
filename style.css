@@ -1,0 +1,80 @@
+* {
+   outline: none;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+   text-decoration: none;
+   list-style-type: none;
+}
+.section {
+   display: flex;
+   flex-direction: column;
+   padding-left: 100px;
+   padding-top: 50px;
+   display: flex;
+}
+.player {
+   display: flex;
+   width: 40%;
+   flex-direction: column;
+   background-color: #9f86cd;
+   padding: 10px;
+}
+.timing {
+   margin-top: 20px;
+   background-color: #9f86cd;
+}
+.player__icons {
+   padding: 10px;
+   display: flex;
+   width: 40%;
+   border: 10px solid #9f86cd;
+   justify-content: start;
+   flex-wrap: wrap;
+}
+.play {
+   margin-right: 20px;
+}
+.box {
+   display: flex;
+   justify-content: flex-end;
+}
+.pause {
+   margin-right: 40px;
+}
+img {
+   width: 25px;
+   height: 25px;
+}
+.close {
+   display: none;
+}
+.input[type="range"] {
+   -webkit-appearance: none;
+   appearance: none;
+   background: transparent;
+   cursor: pointer;
+   max-width: 10rem;
+}
+/***** Стили дорожки *****/
+/***** Chrome, Safari, Opera и Edge Chromium *****/
+.input[type="range"]::-webkit-slider-runnable-track {
+   background: #f178d9;
+   height: 0.4rem;
+   border-radius: 0.7rem;
+}
+ /******** Firefox ********/
+input[type="range"]::-moz-range-track {
+   background: #d47bde;
+   height: 0.5rem;
+}
+/***** Стили ползунка *****/
+/***** Chrome, Safari, Opera и Edge Chromium *****/
+.input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Сбрасываем вид по умолчанию */
+   appearance: none;
+   margin-top: -5px; /* Центрируем ползунок на дорожке */
+   background-color: #721568;
+   height: 1.0rem;
+   width: 0.6rem;
+   border-radius: 0.7rem;
+}
